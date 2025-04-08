@@ -46,3 +46,9 @@ variable "workflow_source" {
   description = "The source code of the workflow"
   type        = string
 }
+
+variable "deletion_protection" {
+  description = "Whether to enable deletion protection for the workflow"
+  type        = bool
+  default     = true
+}
