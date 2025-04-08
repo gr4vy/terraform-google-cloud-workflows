@@ -98,3 +98,9 @@ variable "service_account_create" {
   type        = bool
   default     = false
 }
+
+variable "deletion_protection" {
+  description = "Whether the workflow has deletion protection."
+  type        = bool
+  default     = true
+}
