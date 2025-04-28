@@ -9,4 +9,10 @@ resource "google_workflows_workflow" "example" {
   user_env_vars       = var.workflow_user_env_vars
   source_contents     = var.workflow_source
   deletion_protection = var.deletion_protection
+
+  lifecycle {
+    ignore_changes = [
+      user_env_vars
+    ]
+  }
 }
